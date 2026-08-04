@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City College Of San Jose Del Monte</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+    <section class="sub-header3">
+       <nav>
+        <a href="Index.html"><img src="./img/Better Logo.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="Index.html">HOME</a></li>
+                <li><a href="About.html">ABOUT</a></li>
+                <li><a href="Clusters.html">CLUSTERS</a></li>
+                <li><a href="Offices.html">OFFICES</a></li>
+                <li><a href="Contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+       </nav>
+       <h1> Contact Us</h1>
+</section>
+
+<!---- Contac Us ----->
+
+<section class="location"> 
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5298.870425155105!2d121.07693686035913!3d14.844396969405087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397a8acc3174eeb%3A0xeb8176ea6f580e!2sCity%20College%20of%20San%20Jose%20Del%20Monte!5e0!3m2!1sen!2sph!4v1785763780969!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+
+</section>
+
+<section class="contact-us">
+
+    <div class="row">
+        <div class="contact-col">
+            <div>
+               <i class="fa fa-home"></i>
+               <span>
+                    <h5>Barangay Minuyan Proper</h5>
+                    <p>San Jose del Monte, Philippines</p>
+               </span>
+            </div>
+            <div>
+                <i class="fa fa-phone"></i>
+                <span>
+                    <h5> (044) 321 3629 </h5>
+                    <p> Monday To Saturday, 10am To 6pm</p>
+                </span> 
+            </div>
+            <div>
+                <i class="fa fa-envelope"></i>
+                <span>
+                    <h5> inquiries.ccsjdm@gmail.com </h5>
+                    <p> Email us to query</p>
+                </span>
+            </div>
+        </div>
+        <div class="contact-col">
+
+            <form action="form-handler.php" method="post">
+                <input type="text" name="name" placeholder="Enter your name" required>
+                <input type="email" name="email" placeholder="Enter your email adress" required>
+                <input type="text" name="subject" placeholder="Enter your subject" required>
+                <textarea rows="8" name="message" placeholder="message" required></textarea>
+                <button type="submit" class="hero-btn red-btn"> Send Message</button>
+            </form>
+
+
+
+
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+<!---- footer ----->
+
+<section class="footer">
+    <h4> About Us</h4>
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium animi aperiam pariatur labore nam tempore, <br> sequi minus est odit placeat culpa sunt. Iste corrupti possimus consectetur ut. Culpa, id reprehenderit.</p>
+    <div class="icons">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-linkedin-in"></i>
+    </div>
+    <p> created by Enzo Gurieza</p>
+</section>
+
+
+
+<!-------javascript for toggle menu bar----->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+</body>
+</html>
